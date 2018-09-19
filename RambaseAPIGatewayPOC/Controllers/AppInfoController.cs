@@ -18,7 +18,7 @@ namespace RambaseAPIGatewayPOC.Controllers
         [EnableCors("Policy")]
         [HttpGet("app1")]
         public JObject GetInvoices(int id) {
-            return JObject.Parse("{\"appVersion\":\"v1.0.0\",\"appId\":\"1234\",\"appMatch\":\"app1\",\"layout\":{},\"componentList\":[{\"appVersion\":\"v1.0.0\",\"appId\":\"1234\",\"appMatch\":\"noticeBoard\",\"layout\":{},\"componentList\":null},{\"appVersion\":\"v1.0.0\",\"appId\":\"1234\",\"appMatch\":\"loadInvoices\",\"layout\":{},\"componentList\":null},{\"appVersion\":\"v1.0.0\",\"appId\":\"1234\",\"appMatch\":\"createInvoice\",\"layout\":{},\"componentList\":null}]}");
+            return JObject.Parse("{\"appVersion\":\"v1.0.0\",\"appId\":\"1234\",\"appMatch\":\"app1\",\"layout\":{},\"componentList\":[{\"appVersion\":\"v1.0.0\",\"appId\":\"1234\",\"appMatch\":\"noticeBoard\",\"layout\":{},\"componentList\":null},{\"appVersion\":\"v1.0.0\",\"appId\":\"1234\",\"appMatch\":\"loadInvoices\",\"layout\":{},\"componentList\":null},{\"appVersion\":\"v1.0.0\",\"appId\":\"1234\",\"appMatch\":\"createInvoice\",\"layout\":{},\"componentList\":null},{\"appVersion\":\"v1.0.0\",\"appId\":\"1234\",\"appMatch\":\"salesOrders\",\"layout\":{},\"componentList\":null}]}");
         }
 
 
