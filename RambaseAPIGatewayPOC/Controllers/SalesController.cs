@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
 using RambaseAPIGatewayPOC.Caller;
 using RambaseAPIGatewayPOC.Modules.ServerlessFunctions.Sales;
 
@@ -36,8 +37,8 @@ namespace RambaseAPIGatewayPOC.Controllers
 
         [EnableCors("Policy")]
         [HttpGet("invoices")]
-        public string GetInvoices(int id) {
-            return "{\"invoices\":[{\"invoiceNo\":\"EF23\",\"date\":\"May 2018\",\"client\":\"ABC Enterprises\",\"location\":\"Montainview CA\",\"status\":\"Pending\",\"by\":\"Alex Cartin\",\"amount\":25000}]}";
+        public JObject GetInvoices(int id) {
+            return JObject.Parse("{\"invoices\":[{\"invoiceNo\":\"EF23\",\"date\":\"May 2018\",\"client\":\"ABC Enterprises\",\"location\":\"Montainview CA\",\"status\":\"Pending\",\"by\":\"Alex Cartin\",\"amount\":25000}]}");
         }
 
 
